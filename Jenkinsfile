@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing the application...'
-                sh './hello.out'
+                sh './nonexistent.out'  // This will fail
             }
         }
 
